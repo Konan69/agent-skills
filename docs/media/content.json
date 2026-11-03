@@ -1,0 +1,92 @@
+{
+  "repo": "agent-skills",
+  "accent": "#7CF2C4",
+  "hero": {
+    "command": "cp -r $(dirname */SKILL.md) ~/.claude/skills/ && ls ~/.claude/skills",
+    "output": [
+      {
+        "text": "codex-lanes"
+      },
+      {
+        "text": "no-slop-motion"
+      },
+      {
+        "text": "now"
+      },
+      {
+        "text": "pi-browser"
+      },
+      {
+        "text": "pi-delegate"
+      },
+      {
+        "text": "product-film"
+      },
+      {
+        "text": "sol-loop"
+      }
+    ],
+    "value": "Copy a folder into ~/.claude/skills and Claude Code can load it."
+  },
+  "diagram": {
+    "direction": "LR",
+    "nodes": [
+      {
+        "id": "cc",
+        "label": "Claude Code",
+        "sublabel": "~/.claude/skills"
+      },
+      {
+        "id": "codex",
+        "label": "codex-lanes, sol-loop",
+        "sublabel": "codex-lane, codex exec"
+      },
+      {
+        "id": "pi",
+        "label": "pi-delegate, pi-browser",
+        "sublabel": "pi, agent-browser"
+      },
+      {
+        "id": "pf",
+        "label": "product-film",
+        "sublabel": "Remotion, bun, uv"
+      },
+      {
+        "id": "nsm",
+        "label": "no-slop-motion",
+        "sublabel": "HyperFrames, GSAP"
+      },
+      {
+        "id": "now",
+        "label": "now",
+        "sublabel": "scripts/now.sh"
+      }
+    ],
+    "edges": [
+      {
+        "from": "cc",
+        "to": "codex"
+      },
+      {
+        "from": "cc",
+        "to": "pi"
+      },
+      {
+        "from": "cc",
+        "to": "pf"
+      },
+      {
+        "from": "cc",
+        "to": "nsm"
+      },
+      {
+        "from": "cc",
+        "to": "now"
+      }
+    ],
+    "primary": [
+      "cc",
+      "now"
+    ]
+  }
+}
