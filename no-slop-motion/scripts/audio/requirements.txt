@@ -1,0 +1,11 @@
+# Voiceover scripts: score_takes.py, split_takes.py, check_vo_spacing.py (stdlib only).
+# pip install -r requirements.txt   (Python 3.9+)
+numpy>=1.24
+scipy>=1.10
+soundfile>=0.12
+librosa>=0.10
+faster-whisper>=1.0
+# Emotion scoring in score_takes.py (skip both with --no-emotion). The model, about 1.2 GB,
+# downloads from Hugging Face on first use.
+torch>=2.1
+transformers>=4.40

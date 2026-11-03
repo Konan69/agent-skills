@@ -1,0 +1,6 @@
+# Music scripts: join_on_downbeats.py, cue_sheet.py (shared code in musiclib.py).
+# pip install -r requirements.txt   (Python 3.9+). ffmpeg on PATH decodes m4a/mp3.
+numpy>=1.24
+scipy>=1.10
+soundfile>=0.12
+librosa>=0.10

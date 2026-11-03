@@ -1,0 +1,13 @@
+{
+	"name": "acme-launch-film",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "HYPERFRAMES_NO_TELEMETRY=1 DO_NOT_TRACK=1 npx --yes hyperframes@0.8.78 preview",
+		"check": "HYPERFRAMES_NO_TELEMETRY=1 DO_NOT_TRACK=1 npx --yes hyperframes@0.8.78 check",
+		"snapshot": "HYPERFRAMES_NO_TELEMETRY=1 DO_NOT_TRACK=1 npx --yes hyperframes@0.8.78 snapshot",
+		"render": "HYPERFRAMES_NO_TELEMETRY=1 DO_NOT_TRACK=1 npx --yes hyperframes@0.8.78 render",
+		"render:film": "npx --yes tsx scripts/render/render.ts",
+		"render:audio": "npx --yes tsx scripts/render/render.ts --audio-only"
+	}
+}

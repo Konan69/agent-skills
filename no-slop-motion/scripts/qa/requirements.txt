@@ -1,0 +1,3 @@
+# QA scripts: pop-scan.py and contact_sheet.py. lint-slop.ts needs only Node.
+# pip install -r requirements.txt   (Python 3.8+). ffmpeg and ffprobe must be on PATH.
+numpy>=1.24

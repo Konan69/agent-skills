@@ -1,0 +1,5 @@
+{
+	"rules": [
+		{ "id": "no-neon", "pattern": "#0ff\\b|#00ffff", "flags": "i", "files": ["css"], "severity": "error", "message": "Neon cyan is on the hates list" }
+	]
+}
