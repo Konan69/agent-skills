@@ -1,6 +1,6 @@
 # agent-skills
 
-*Seven spells for Claude: summon a Codex, borrow a browser, ask the clock, shoot a film.*
+Claude Code skills I use every day.
 
 Seven Claude Code skills for running Codex and Pi agents beside Claude, driving a browser, telling the time, and making product and launch films.
 
